@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age-calculator-app-main</title>
+    <link rel="stylesheet" href="/style/age-calculator-app-main.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon-32x32.png"
+      type="png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="data">
+        <form class="date-input" id="date-input">
+          <div class="input-group">
+            <label for="day">DAY</label>
+            <input
+              type="text"
+              id="day"
+              class="input"
+              placeholder="DD"
+              required
+            />
+            <span class="error" id="errorDay"></span>
+          </div>
+          <div class="input-group">
+            <label for="month">MONTH</label>
+            <input
+              type="text"
+              id="month"
+              class="input"
+              placeholder="MM"
+              required
+            />
+            <span class="error" id="errorMonth"></span>
+          </div>
+          <div class="input-group">
+            <label for="year">YEAR</label>
+            <input
+              type="text"
+              id="year"
+              class="input"
+              placeholder="YYYY"
+              required
+            />
+            <span class="error" id="errorYear"></span>
+          </div>
+        </form>
+        <div class="line-button">
+          <div class="separator-line"></div>
+          <span class="arrow-button">
+            <button type="button" id="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="44"
+                viewBox="0 0 46 44"
+              >
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="result">
+        <p><span class="dash" id="year-dash">--</span> years</p>
+        <p><span class="dash" id="month-dash">--</span> months</p>
+        <p><span class="dash" id="day-dash">--</span> days</p>
+      </div>
+    </div>
+    <script src="/js/age-calculator-app-main.js"></script>
+  </body>
+</html>
